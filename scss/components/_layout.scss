@@ -1,0 +1,25 @@
+// Layout 
+
+
+@media (max-width: (map-get($breakpoints, medium) - 1)) {
+
+    .wrap {
+        margin: 0 10px;
+    }
+
+}
+@media (min-width: map-get($breakpoints, medium)) and (max-width: (map-get($breakpoints, large) - 1)) {
+
+    .wrap {
+        margin: 0 10px;
+    }
+
+}
+@media (min-width: map-get($breakpoints, large)) {
+
+    .wrap {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+}

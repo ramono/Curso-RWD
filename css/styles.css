@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+  font-family: sans-serif;
+}
+
+@media (max-width: 679px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 680px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1025px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 679px) {
+  .wrap {
+    margin: 0 10px;
+  }
+}
+@media (min-width: 680px) and (max-width: 1024px) {
+  .wrap {
+    margin: 0 10px;
+  }
+}
+@media (min-width: 1025px) {
+  .wrap {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
