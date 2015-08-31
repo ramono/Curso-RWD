@@ -1,25 +1,53 @@
 // Layout 
-
+.box {
+    padding: 10px;
+}
+.sitename {
+    padding: 10px;
+}
+.credits {
+    padding: 10px;
+}
+.container {
+    margin: 0 auto;
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
 
 @media (max-width: (map-get($breakpoints, medium) - 1)) {
-
-    .wrap {
-        margin: 0 10px;
-    }
 
 }
 @media (min-width: map-get($breakpoints, medium)) and (max-width: (map-get($breakpoints, large) - 1)) {
 
-    .wrap {
+    .container {
         margin: 0 10px;
+    }
+    .content {
+        width: 61.8%;
+        float: left;
+    }
+    .sidebar {
+        width: 38.2%;
+        float: left;
     }
 
 }
 @media (min-width: map-get($breakpoints, large)) {
 
-    .wrap {
+    .container {
         max-width: 960px;
-        margin: 0 auto;
+    }
+
+    .content {
+        width: 61.8%;
+        float: left;
+    }
+    .sidebar {
+        width: 38.2%;
+        float: left;
     }
 
 }

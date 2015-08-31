@@ -5,6 +5,28 @@ body {
     line-height: 1.4em;
     font-family: sans-serif;
 }
+
+.sidebar {
+    ul {
+        margin: 0 0 10px 0;
+        padding: 0;
+        list-style: none;
+        border-bottom: 1px solid map-get($colors, grey_bg);
+        li {
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid map-get($colors, grey_bg);
+        }
+        a {
+            display: block;
+            padding: 10px 0;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: map-get($colors, grey_md);
+        }
+    }
+}
+
 @media (max-width: (map-get($breakpoints, medium) - 1)) {
     body {
         font-size: 14px;
